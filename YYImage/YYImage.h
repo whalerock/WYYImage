@@ -87,6 +87,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic) BOOL preloadAllAnimatedImageFrames;
 
+@property (nonatomic) NSUInteger loopCount;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -482,6 +482,9 @@ typedef NS_ENUM(NSUInteger, YYAnimatedImageType) {
             if (_curLoop >= _totalLoop && _totalLoop != 0) {
                 _loopEnd = YES;
                 [self stopAnimating];
+                if ([self.delegate respondsToSelector:@selector(didStopAnimating:)]) {
+                    [self.delegate didStopAnimating: self];
+                }
                 [self.layer setNeedsDisplay]; // let system call `displayLayer:` before runloop sleep
                 return; // stop at last frame
             }
