@@ -275,11 +275,6 @@ typedef NS_ENUM(NSUInteger, YYAnimatedImageType) {
     _incrBufferCount = 0;
 }
 
-- (void)setAnimationImage:(UIImage *)image {
-    if (self.image == image) return;
-    [self setImage:image withType:YYAnimatedImageTypeImages];
-}
-
 - (void)setImage:(UIImage *)image {
     if (self.image == image) return;
     [self setImage:image withType:YYAnimatedImageTypeImage];
