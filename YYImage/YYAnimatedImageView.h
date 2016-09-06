@@ -80,6 +80,8 @@ NS_ASSUME_NONNULL_BEGIN
      YYAnimatedImageView *imageView = [YYAnimatedImageView alloc] initWithImage:image];
      [view addSubView:imageView];
  */
+
+@class YYAnimatedImage;
 @interface YYAnimatedImageView : UIImageView
 
 /**
@@ -128,6 +130,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic) NSUInteger maxBufferSize;
 
+@property (nonatomic) YYAnimatedImage *animatedImage;
 @property (nonatomic) NSObject<YYAnimatedImageViewDelegate> *delegate;
 
 @end
