@@ -130,8 +130,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic) NSUInteger maxBufferSize;
 
--(void)imageChanged;
-@property (nonatomic) YYAnimatedImage *animatedImage;
+- (void)setAnimationImage:(UIImage *)image;
 @property (nonatomic) NSObject<YYAnimatedImageViewDelegate> *delegate;
 
 @end
